@@ -1,14 +1,6 @@
-import type { ICardListData, ICardListState, IGame } from '../src/Types/types';
+import type { IGame, IGameListState } from '../src/entities/games/model/types';
 
-export const mockCardListData: ICardListData = {
-  isLoading: true,
-  games: [],
-  count: 0,
-  responseOk: true,
-  currentPage: '1',
-};
-
-export const mocCardListState: ICardListState = {
+export const mocCardListState: IGameListState = {
   item: null,
   selectItems: [],
   enableCacheGameList: true,
