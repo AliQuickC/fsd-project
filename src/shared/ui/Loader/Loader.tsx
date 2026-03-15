@@ -1,9 +1,9 @@
-import type { JSX } from 'react';
+import { loaderAnimation } from '../../assets';
 
-export function Loader(): JSX.Element {
+export function Loader() {
   return (
     <div>
-      <img src="./loader.gif" alt="loader..." />
+      <img src={loaderAnimation} alt="loader..." />
     </div>
   );
 }

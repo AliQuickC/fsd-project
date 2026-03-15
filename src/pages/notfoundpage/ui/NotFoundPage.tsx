@@ -1,6 +1,7 @@
 import type { JSX } from 'react';
 import s from './NotFoundPage.module.sass';
 import { NavLink } from 'react-router-dom';
+import { error404 } from '../../../shared/assets';
 
 export default function NotFoundPage(): JSX.Element {
   return (
@@ -14,7 +15,7 @@ export default function NotFoundPage(): JSX.Element {
             Home page
           </NavLink>
         </div>
-        <img className={s.img404} src="./error404.jpg" alt="error404" />
+        <img className={s.img404} src={error404} alt="error404" />
       </div>
     </div>
   );
